@@ -3,7 +3,13 @@
     padding: 0;
     font-family: sans-serif;
 }
-
+.images{
+    width: 45%;
+    height: 80%;
+    position: absolute;
+    bottom: 0;
+    right: 100px;
+}
 .hero{
     position: relative;
     width: 100%;
@@ -74,13 +80,7 @@ span{
     border-radius: 5px;
 }
 
-.images{
-    width: 45%;
-    height: 80%;
-    position: absolute;
-    bottom: 0;
-    right: 100px;
-}
+
 
 .images img{
     height: 100%;
@@ -112,4 +112,39 @@ span{
 
 .social a:hover{
     color: orange;
+}
+
+@media(max-width: 700px)
+
+{ .images{
+   
+    width: 45%;
+    height: 45%;
+    position:-ms-page;
+    bottom: 0;
+    right: 100px;
+}
+}
+
+@media(max-width: 701px)
+{
+    nav{
+        display: flex;
+        width: 80%;
+        margin: auto;
+        padding: 21px 0;
+        align-items: center;
+        justify-content: space-between;
+    }
+}
+@media(max-width: 400px)
+
+{ .images{
+   
+    width: 1%;
+    height: 45%;
+    position:-ms-page;
+    bottom: 0;
+    right: 100px;
+}
 }
